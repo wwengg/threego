@@ -3,10 +3,10 @@ module github.com/wwengg/simple
 go 1.22.1
 
 require (
+	github.com/andybalholm/brotli v1.1.0
 	github.com/fsnotify/fsnotify v1.7.0
 	github.com/getsentry/sentry-go v0.28.1
 	github.com/gin-gonic/gin v1.9.1
-	github.com/andybalholm/brotli v1.0.0
 	github.com/gorilla/websocket v1.5.3
 	github.com/nsqio/go-nsq v1.1.0
 	github.com/opentracing/opentracing-go v1.2.0
@@ -18,6 +18,7 @@ require (
 	github.com/uber/jaeger-client-go v2.30.0+incompatible
 	go.etcd.io/etcd/api/v3 v3.5.10
 	go.etcd.io/etcd/client/v3 v3.5.10
+	go.mongodb.org/mongo-driver v1.17.2
 	go.uber.org/zap v1.21.0
 	gorm.io/driver/mysql v1.5.2
 	gorm.io/gorm v1.25.5
@@ -121,7 +122,6 @@ require (
 	github.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect
 	go.etcd.io/etcd/client/pkg/v3 v3.5.10 // indirect
 	go.etcd.io/etcd/client/v2 v2.305.10 // indirect
-	go.mongodb.org/mongo-driver v1.17.2 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/mock v0.4.0 // indirect
 	go.uber.org/multierr v1.9.0 // indirect
