@@ -2,14 +2,14 @@
 package main
 
 import (
-	"github.com/wwengg/simple/core/sconfig"
-	"github.com/wwengg/simple/core/slog"
-	"github.com/wwengg/simple/core/snet/http"
-	"github.com/wwengg/simple/core/srpc"
-	"github.com/wwengg/simple/server"
-	"github.com/wwengg/simple/server/example/gateway/global"
-	"github.com/wwengg/simple/server/example/gateway/middleware"
-	"github.com/wwengg/simple/server/example/gateway/router"
+	"github.com/wwengg/threego/core/sconfig"
+	"github.com/wwengg/threego/core/slog"
+	"github.com/wwengg/threego/core/snet/http"
+	"github.com/wwengg/threego/core/srpc"
+	"github.com/wwengg/threego/server"
+	"github.com/wwengg/threego/server/example/gateway/global"
+	"github.com/wwengg/threego/server/example/gateway/middleware"
+	"github.com/wwengg/threego/server/example/gateway/router"
 )
 
 

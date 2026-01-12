@@ -2,7 +2,7 @@ package smsg
 
 import (
 	"github.com/smallnest/rpcx/protocol"
-	"github.com/wwengg/simple/core/utils"
+	"github.com/wwengg/threego/core/utils"
 )
 
 type SerializeType byte

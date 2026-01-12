@@ -6,12 +6,13 @@ package srpc
 
 import (
 	"fmt"
+	"time"
+
 	"github.com/rpcxio/rpcx-etcd/serverplugin"
 	"github.com/smallnest/rpcx/protocol"
 	"github.com/smallnest/rpcx/server"
-	"github.com/wwengg/simple/core/sconfig"
-	"github.com/wwengg/simple/core/utils"
-	"time"
+	"github.com/wwengg/threego/core/sconfig"
+	"github.com/wwengg/threego/core/utils"
 )
 
 type SRPCServer interface {

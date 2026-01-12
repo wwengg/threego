@@ -26,9 +26,9 @@ import (
 {{- if .Viper }}
 	"fmt"{{ end }}
 	"github.com/smallnest/rpcx/server"
-	"github.com/wwengg/simple/core/plugin"
-	"github.com/wwengg/simple/core/sconfig"
-	"github.com/wwengg/simple/core/srpc"
+	"github.com/wwengg/threego/core/plugin"
+	"github.com/wwengg/threego/core/sconfig"
+	"github.com/wwengg/threego/core/srpc"
 	"context"
 	"os"
 	"os/signal"

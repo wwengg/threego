@@ -5,9 +5,9 @@
 package server
 
 import (
-	"github.com/wwengg/simple/core/sconfig"
-	"github.com/wwengg/simple/core/snet/http"
-	"github.com/wwengg/simple/core/srpc"
+	"github.com/wwengg/threego/core/sconfig"
+	"github.com/wwengg/threego/core/snet/http"
+	"github.com/wwengg/threego/core/srpc"
 )
 
 type GatewayOptions func(g *Gateway)

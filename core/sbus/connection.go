@@ -4,11 +4,12 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/wwengg/simple/core/slog"
-	"go.uber.org/zap"
 	"net"
 	"sync"
 	"time"
+
+	"github.com/wwengg/threego/core/slog"
+	"go.uber.org/zap"
 )
 
 type MsgData struct {

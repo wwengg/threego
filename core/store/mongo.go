@@ -2,11 +2,12 @@ package store
 
 import (
 	"context"
-	"github.com/wwengg/simple/core/slog"
+	"time"
+
+	"github.com/wwengg/threego/core/slog"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"go.mongodb.org/mongo-driver/mongo/readpref"
-	"time"
 )
 
 type MongoDB struct {

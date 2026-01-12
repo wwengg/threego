@@ -7,13 +7,14 @@ package store
 import (
 	"context"
 	"fmt"
-	"github.com/redis/go-redis/v9"
-	"github.com/wwengg/simple/core/sconfig"
-	"github.com/wwengg/simple/core/slog"
-	"go.uber.org/zap"
 	"hash/crc32"
 	"runtime"
 	"strconv"
+
+	"github.com/redis/go-redis/v9"
+	"github.com/wwengg/threego/core/sconfig"
+	"github.com/wwengg/threego/core/slog"
+	"go.uber.org/zap"
 )
 
 type RedisBase struct {

@@ -6,10 +6,11 @@ package internal
 
 import (
 	"fmt"
-	"github.com/getsentry/sentry-go"
-	"github.com/wwengg/simple/core/sconfig"
-	"go.uber.org/zap/zapcore"
 	"os"
+
+	"github.com/getsentry/sentry-go"
+	"github.com/wwengg/threego/core/sconfig"
+	"go.uber.org/zap/zapcore"
 )
 
 var FileRotatelogs = new(fileRotatelogs)

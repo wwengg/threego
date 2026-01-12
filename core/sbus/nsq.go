@@ -4,15 +4,16 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/nsqio/go-nsq"
-	"github.com/wwengg/simple/core/sconfig"
-	"github.com/wwengg/simple/core/slog"
-	"go.uber.org/zap"
 	"runtime"
 	"strconv"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/nsqio/go-nsq"
+	"github.com/wwengg/threego/core/sconfig"
+	"github.com/wwengg/threego/core/slog"
+	"go.uber.org/zap"
 )
 
 type TopicEnum int32

@@ -10,8 +10,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/wwengg/simple/core/sconfig"
-	"github.com/wwengg/simple/core/slog"
+	"github.com/wwengg/threego/core/sconfig"
+	"github.com/wwengg/threego/core/slog"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
 

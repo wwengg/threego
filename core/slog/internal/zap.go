@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wwengg/simple/core/sconfig"
+	"github.com/wwengg/threego/core/sconfig"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

@@ -2,7 +2,7 @@ package sbus
 
 import (
 	"github.com/nsqio/go-nsq"
-	"github.com/wwengg/simple/core/smsg"
+	"github.com/wwengg/threego/core/smsg"
 )
 
 type SMsg interface {

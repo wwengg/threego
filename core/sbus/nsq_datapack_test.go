@@ -2,8 +2,10 @@ package sbus
 
 import (
 	"fmt"
-	"github.com/wwengg/simple/core/smsg"
-	//"github.com/wwengg/simple/proto/pbbase"
+
+	"github.com/wwengg/threego/core/smsg"
+
+	//"github.com/wwengg/threego/proto/pbbase"
 	"testing"
 )
 

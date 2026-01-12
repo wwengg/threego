@@ -3,9 +3,10 @@ package sbus
 import (
 	"context"
 	"fmt"
-	"github.com/wwengg/simple/core/slog"
 	"runtime"
 	"sync"
+
+	"github.com/wwengg/threego/core/slog"
 )
 
 type STaskHandler interface {

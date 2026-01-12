@@ -1,4 +1,4 @@
-# Simple
+# ThreeGO
 敏捷开发、高效、稳定、易部署、多语言(计划Java、Python)
 
 ## 快速开始
@@ -6,7 +6,7 @@
 ### simplectl 快速生成rpc服务代码
 1. install simplectl
 ```
-go install github.com/wwengg/simple/tool/simplectl@latest
+go install github.com/wwengg/threego/tool/threegoctl@latest
 ```
 
 2. Create a new directory

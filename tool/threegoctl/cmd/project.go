@@ -10,7 +10,7 @@ import (
 	"text/template"
 
 	"github.com/spf13/cobra"
-	"github.com/wwengg/simple/tool/simplectl/tpl"
+	"github.com/wwengg/threego/tool/threegoctl/tpl"
 )
 
 // Project contains name, license and paths to projects.

@@ -5,13 +5,14 @@
 package http
 
 import (
+	"net"
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/http3"
-	"github.com/wwengg/simple/core/sconfig"
-	"github.com/wwengg/simple/core/slog"
-	"net"
-	"net/http"
+	"github.com/wwengg/threego/core/sconfig"
+	"github.com/wwengg/threego/core/slog"
 )
 
 type GinEngine struct {

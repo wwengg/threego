@@ -3,8 +3,9 @@ package sbus
 import (
 	"encoding/hex"
 	"fmt"
+
 	"github.com/gorilla/websocket"
-	"github.com/wwengg/simple/core/slog"
+	"github.com/wwengg/threego/core/slog"
 )
 
 type WsConnection struct {

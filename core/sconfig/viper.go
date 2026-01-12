@@ -7,11 +7,12 @@ package sconfig
 import (
 	"flag"
 	"fmt"
-	"github.com/fsnotify/fsnotify"
-	"github.com/spf13/viper"
-	"github.com/wwengg/simple/core/internal"
 	"os"
 	"reflect"
+
+	"github.com/fsnotify/fsnotify"
+	"github.com/spf13/viper"
+	"github.com/wwengg/threego/core/internal"
 )
 
 // Viper //

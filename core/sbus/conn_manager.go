@@ -2,9 +2,10 @@ package sbus
 
 import (
 	"errors"
-	"github.com/wwengg/simple/core/slog"
-	"github.com/wwengg/simple/core/utils"
 	"strconv"
+
+	"github.com/wwengg/threego/core/slog"
+	"github.com/wwengg/threego/core/utils"
 )
 
 type ConnManager struct {

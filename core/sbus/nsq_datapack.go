@@ -4,10 +4,11 @@ import (
 	"bytes"
 	"encoding/binary"
 	"errors"
-	"github.com/smallnest/rpcx/util"
-	"github.com/wwengg/simple/core/slog"
-	"github.com/wwengg/simple/core/smsg"
 	"runtime"
+
+	"github.com/smallnest/rpcx/util"
+	"github.com/wwengg/threego/core/slog"
+	"github.com/wwengg/threego/core/smsg"
 )
 
 var nsqDataHeaderLen uint32 = 13

@@ -8,16 +8,17 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/wwengg/simple/core/slog"
-	"github.com/wwengg/simple/core/utils"
 	"runtime"
 	"sync"
 	"sync/atomic"
 	"time"
 
+	"github.com/wwengg/threego/core/slog"
+	"github.com/wwengg/threego/core/utils"
+
 	"github.com/smallnest/rpcx/client"
 	"github.com/smallnest/rpcx/protocol"
-	"github.com/wwengg/simple/core/sconfig"
+	"github.com/wwengg/threego/core/sconfig"
 )
 
 type OptionSRPCClients func(s *RPCXClients)

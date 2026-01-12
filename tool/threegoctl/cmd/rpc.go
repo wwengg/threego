@@ -6,13 +6,14 @@ package cmd
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/spf13/viper"
 	"os"
 	"os/exec"
 	"path"
 	"path/filepath"
 	"strings"
 	"time"
+
+	"github.com/spf13/viper"
 
 	"github.com/spf13/cobra"
 )
@@ -52,7 +53,7 @@ var rpcInitCmd = &cobra.Command{
 		projectPath, err := initializeProject(args)
 		cobra.CheckErr(err)
 		cobra.CheckErr(goGet("github.com/spf13/cobra"))
-		cobra.CheckErr(goGet("github.com/wwengg/simple"))
+		cobra.CheckErr(goGet("github.com/wwengg/threego"))
 		cobra.CheckErr(goGet("github.com/smallnest/rpcx"))
 		if viper.GetBool("useViper") {
 			cobra.CheckErr(goGet("github.com/spf13/viper"))

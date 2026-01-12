@@ -1,4 +1,4 @@
-module github.com/wwengg/simple/tool/simplectl
+module github.com/wwengg/threego/tool/threegoctl
 
 go 1.20
 

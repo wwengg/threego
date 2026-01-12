@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/wwengg/simple/core/slog"
+	"github.com/wwengg/threego/core/slog"
 	"go.uber.org/zap"
 )
 

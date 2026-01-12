@@ -14,7 +14,7 @@
 
 ## 常见开发工作流（具体命令） 🛠️
 - 安装 & 代码生成工具：
-  - `go install github.com/wwengg/simple/tool/simplectl@latest`（安装 `simplectl`）
+  - `go install github.com/wwengg/threego/tool/threegoctl@latest`（安装 `simplectl`）
   - `go install github.com/wwengg/protoc-gen-simple@latest`（用于 `protoc` 生成 model/service）
 - 用 `simplectl` 快速生成：
   - 初始化 RPC 项目：`simplectl rpc init --author "you <you@example.com>"`

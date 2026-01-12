@@ -7,12 +7,13 @@ package slog
 import (
 	"context"
 	"fmt"
-	"github.com/wwengg/simple/core/sconfig"
-	"github.com/wwengg/simple/core/slog/internal"
-	"github.com/wwengg/simple/core/utils"
+	"os"
+
+	"github.com/wwengg/threego/core/sconfig"
+	"github.com/wwengg/threego/core/slog/internal"
+	"github.com/wwengg/threego/core/utils"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"os"
 )
 
 //type Field = zap.Field

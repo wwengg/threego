@@ -11,9 +11,9 @@ func GlobalTemplate() []byte {
 package global
 
 import (
-	"github.com/wwengg/simple/core/slog"
-	"github.com/wwengg/simple/core/srpc"
-	"github.com/wwengg/simple/core/store"
+	"github.com/wwengg/threego/core/slog"
+	"github.com/wwengg/threego/core/srpc"
+	"github.com/wwengg/threego/core/store"
 	"gorm.io/gorm"
 )
 
@@ -55,7 +55,7 @@ package global
 
 import (
 	"fmt"
-	"github.com/wwengg/simple/core/sconfig"
+	"github.com/wwengg/threego/core/sconfig"
 	"reflect"
 )
 

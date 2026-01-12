@@ -5,9 +5,9 @@
 package store
 
 import (
-	"github.com/wwengg/simple/core/sconfig"
-	"github.com/wwengg/simple/core/slog"
-	"github.com/wwengg/simple/core/store/internal"
+	"github.com/wwengg/threego/core/sconfig"
+	"github.com/wwengg/threego/core/slog"
+	"github.com/wwengg/threego/core/store/internal"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )

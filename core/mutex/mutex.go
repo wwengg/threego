@@ -6,9 +6,10 @@ package mutex
 
 import (
 	"context"
-	"github.com/wwengg/simple/core/setcd"
-	clientv3 "go.etcd.io/etcd/client/v3"
 	"sync"
+
+	"github.com/wwengg/threego/core/setcd"
+	clientv3 "go.etcd.io/etcd/client/v3"
 )
 
 type EtcdMutex struct {
