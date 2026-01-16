@@ -26,8 +26,12 @@ func DBList(config *[]sconfig.SpecializedDB, log slog.Slog) map[string]*gorm.DB 
 
 		//case "mssql":
 		//	dbMap[info.AliasName] = GormMssqlByConfig(config.Mssql{GeneralDB: info.GeneralDB})
-		//case "pgsql":
-		//	dbMap[info.AliasName] = GormPgSqlByConfig(config.Pgsql{GeneralDB: info.GeneralDB})
+		case "pgsql":
+			if info.GeneralDB.LogZap {
+				dbMap[info.AliasName] = GormPgSqlByConfig(sconfig.Pgsql{GeneralDB: info.GeneralDB}, log)
+			} else {
+				dbMap[info.AliasName] = GormPgSqlByConfig(sconfig.Pgsql{GeneralDB: info.GeneralDB}, nil)
+			}
 		//case "oracle":
 		//	dbMap[info.AliasName] = GormOracleByConfig(config.Oracle{GeneralDB: info.GeneralDB})
 		default:

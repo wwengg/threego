@@ -20,6 +20,18 @@ type DsnProvider interface {
 	Dsn() string
 }
 
+type Pgsql struct {
+	GeneralDB `yaml:",inline" mapstructure:",squash"`
+}
+
+func (p *Pgsql) Dsn() string {
+	return "host=" + p.Path + " user=" + p.Username + " password=" + p.Password + " dbname=" + p.Dbname + " port=" + p.Port + " " + p.Config
+}
+
+func (p *Pgsql) GetLogMode() string {
+	return p.LogMode
+}
+
 // Embeded 结构体可以压平到上一层，从而保持 config 文件的结构和原来一样
 // 见 playground: https://go.dev/play/p/KIcuhqEoxmY
 
