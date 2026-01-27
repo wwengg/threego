@@ -125,7 +125,8 @@ func {{ .AppName }}Serve(rpc sconfig.RPC, rpcService sconfig.RpcService) {
 	}()
 
 	s := server.NewServer()
-	t, io, err := plugin.NewTracer(服务名称, global.CONFIG.Jaeger.Agent)
+	// TODO 设置服务名称
+	t, io, err := plugin.NewTracer("Unknow", global.CONFIG.Jaeger.Agent)
 	if err == nil {
 		defer io.Close()
 		p := plugin.NewJaegerPlugin(t)
