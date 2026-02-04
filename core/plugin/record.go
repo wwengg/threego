@@ -20,7 +20,15 @@ func NewRecordPlugin(slog slog.Slog) *RecordPlugin {
 }
 
 func (p *RecordPlugin) PreCall(ctx context.Context, serviceName, methodName string, args interface{}) (interface{}, error) {
-	p.logger.Info(fmt.Sprintf("Start[%s][%s]", serviceName, methodName), zap.Any("args", args))
+	md := ctx.Value(share.ResMetaDataKey)
+	if md == nil {
+		p.logger.Info(fmt.Sprintf("Start[%s][%s]", serviceName, methodName), zap.Any("args", args))
+		return args, nil
+	}
+	if v, ok := md.(map[string]string)["record"]; ok && v == "1" {
+		// 允许敏感返回值不记录
+		p.logger.Info(fmt.Sprintf("Start[%s][%s]", serviceName, methodName), zap.Any("args", args))
+	}
 	return args, nil
 }
 
