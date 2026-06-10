@@ -18,5 +18,6 @@ type Config struct {
 	Jaeger     Jaeger          `mapstructure:"jaeger" json:"jaeger" yaml:"jaeger"`
 	CertPath   string          `mapstructure:"cert-path" json:"certPath" yaml:"cert-path"`
 	KeyPath    string          `mapstructure:"key-path" json:"keyPath" yaml:"key-path"`
-	Mongo      Mongo           `mapstructure:"mongo" json:"mongo" yaml:"mongo"`
+	Mongo               Mongo     `mapstructure:"mongo" json:"mongo" yaml:"mongo"`
+	RecordIgnoreMethods []string  `mapstructure:"record_ignore_methods" json:"record_ignore_methods" yaml:"record_ignore_methods"`
 }
